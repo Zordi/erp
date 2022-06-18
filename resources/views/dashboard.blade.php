@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app2')
 @section('content')
 <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
     <!--begin::Toolbar-->

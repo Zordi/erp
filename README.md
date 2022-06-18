@@ -1,7 +1,7 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/Zordi/erp/master/public/assets/media/logos/logo.png" width="400"></a></p>
 
 <p align="center">
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<a href=""><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
 ## About ERP

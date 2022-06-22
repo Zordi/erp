@@ -58,13 +58,13 @@
 									<!--begin::Col-->
 									<div class="col-xl-6">
 										<label class="form-label fw-bolder text-dark fs-6">Full Name</label>
-										<input class="form-control form-control-lg form-control-solid" type="text" placeholder="" name="name" autocomplete="off" />
+										<input id="name" class="form-control form-control-lg form-control-solid" type="text" placeholder="" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus />
 									</div>
 									<!--end::Col-->
 									<!--begin::Col-->
 									<div class="col-xl-6">
 										<label class="form-label fw-bolder text-dark fs-6">Company</label>
-										<input class="form-control form-control-lg form-control-solid" type="text" placeholder="" name="company" autocomplete="off" />
+										<input id="company" class="form-control form-control-lg form-control-solid" type="text" placeholder="" name="company" value="{{ old('company') }}" required autocomplete="company" autofocus />
 									</div>
 									<!--end::Col-->
 								</div>
@@ -72,7 +72,7 @@
 								<!--begin::Input group-->
 								<div class="fv-row mb-7">
 									<label class="form-label fw-bolder text-dark fs-6">Email</label>
-									<input class="form-control form-control-lg form-control-solid" type="email" placeholder="" name="email" autocomplete="off" />
+									<input id="email" class="form-control form-control-lg form-control-solid" type="email" placeholder="" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus />
 								</div>
 								<!--end::Input group-->
 								<!--begin::Input group-->
@@ -84,7 +84,7 @@
 										<!--end::Label-->
 										<!--begin::Input wrapper-->
 										<div class="position-relative mb-3">
-											<input class="form-control form-control-lg form-control-solid" type="password" placeholder="" name="password" autocomplete="off" />
+											<input id="password" class="form-control form-control-lg form-control-solid" type="password" placeholder="" name="password" required autocomplete="new-password" />
 											<span class="btn btn-sm btn-icon position-absolute translate-middle top-50 end-0 me-n2" data-kt-password-meter-control="visibility">
 												<i class="bi bi-eye-slash fs-2"></i>
 												<i class="bi bi-eye fs-2 d-none"></i>
@@ -109,7 +109,7 @@
 								<!--begin::Input group-->
 								<div class="fv-row mb-5">
 									<label class="form-label fw-bolder text-dark fs-6">Confirm Password</label>
-									<input class="form-control form-control-lg form-control-solid" type="password" placeholder="" name="confirm-password" autocomplete="off" />
+									<input id="password_confirm" class="form-control form-control-lg form-control-solid" type="password" placeholder="" name="password_confirmation" required autocomplete="new-password" />
 								</div>
 								<!--end::Input group-->
 								<!--begin::Input group-->
@@ -140,9 +140,8 @@
 					<div class="d-flex flex-center flex-wrap fs-6 p-5 pb-0">
 						<!--begin::Links-->
 						<div class="d-flex flex-center fw-bold fs-6">
-							<a href="https://keenthemes.com" class="text-muted text-hover-primary px-2" target="_blank">About</a>
-							<a href="https://devs.keenthemes.com" class="text-muted text-hover-primary px-2" target="_blank">Support</a>
-							<a href="https://1.envato.market/EA4JP" class="text-muted text-hover-primary px-2" target="_blank">Purchase</a>
+							<a href="#" class="text-muted text-hover-primary px-2" target="_blank">About</a>
+							<a href="#" class="text-muted text-hover-primary px-2" target="_blank">Support</a>
 						</div>
 						<!--end::Links-->
 					</div>

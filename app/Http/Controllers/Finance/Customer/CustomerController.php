@@ -27,4 +27,10 @@ class CustomerController extends Controller
         $customer = Customer::latest()->get();
         return view('finance/customer/customer', compact('customer'));
     }
+/*
+    public function store(Request $request)
+    {
+
+    }
+*/
 }

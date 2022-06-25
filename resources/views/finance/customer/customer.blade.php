@@ -412,41 +412,74 @@
                             <div class="modal-body py-10 px-lg-17">
                                 <!--begin::Scroll-->
                                 <div class="scroll-y me-n7 pe-7" id="kt_modal_add_customer_scroll" data-kt-scroll="true" data-kt-scroll-activate="{default: false, lg: true}" data-kt-scroll-max-height="auto" data-kt-scroll-dependencies="#kt_modal_add_customer_header" data-kt-scroll-wrappers="#kt_modal_add_customer_scroll" data-kt-scroll-offset="300px">
-                                    <!--begin::Input group-->
-                                    <div class="fv-row mb-7">
-                                        <!--begin::Label-->
-                                        <label class="required fs-6 fw-bold mb-2">Name</label>
-                                        <!--end::Label-->
-                                        <!--begin::Input-->
-                                        <input type="text" class="form-control form-control-solid" placeholder="" name="name" value="Sean Bean" />
-                                        <!--end::Input-->
+                                    <div class="row g-9 mb-7">
+                                        <!--begin::Col-->
+                                        <div class="col-md-6 fv-row">
+                                            <!--begin::Label-->
+                                            <label class="required fs-6 fw-bold mb-2">Name</label>
+                                            <!--end::Label-->
+                                            <!--begin::Input-->
+                                            <input class="form-control form-control-solid" placeholder="" name="name" />
+                                            <!--end::Input-->
+                                        </div>
+                                        <!--end::Col-->
+                                        <!--begin::Col-->
+                                        <div class="col-md-6 fv-row">
+                                            <!--begin::Label-->
+                                            <label class="fs-6 fw-bold mb-2">E-mail</label>
+                                            <!--end::Label-->
+                                            <!--begin::Input-->
+                                            <input class="form-control form-control-solid" placeholder="" name="email" />
+                                            <!--end::Input-->
+                                        </div>
+                                        <!--end::Col-->
                                     </div>
-                                    <!--end::Input group-->
-                                    <!--begin::Input group-->
-                                    <div class="fv-row mb-7">
-                                        <!--begin::Label-->
-                                        <label class="fs-6 fw-bold mb-2">
-                                            <span class="required">Email</span>
-                                            <i class="fas fa-exclamation-circle ms-1 fs-7" data-bs-toggle="tooltip" title="Email address must be active"></i>
-                                        </label>
-                                        <!--end::Label-->
-                                        <!--begin::Input-->
-                                        <input type="email" class="form-control form-control-solid" placeholder="" name="email" value="sean@dellito.com" />
-                                        <!--end::Input-->
+                                    <div class="row g-9 mb-7">
+                                        <!--begin::Col-->
+                                        <div class="col-md-6 fv-row">
+                                            <!--begin::Label-->
+                                            <label class="fs-6 fw-bold mb-2">Company</label>
+                                            <!--end::Label-->
+                                            <!--begin::Input-->
+                                            <input class="form-control form-control-solid" placeholder="" name="company" />
+                                            <!--end::Input-->
+                                        </div>
+                                        <!--end::Col-->
+                                        <!--begin::Col-->
+                                        <div class="col-md-6 fv-row">
+                                            <!--begin::Label-->
+                                            <label class="fs-6 fw-bold mb-2">Job</label>
+                                            <!--end::Label-->
+                                            <!--begin::Input-->
+                                            <input class="form-control form-control-solid" placeholder="" name="job" />
+                                            <!--end::Input-->
+                                        </div>
+                                        <!--end::Col-->
                                     </div>
-                                    <!--end::Input group-->
-                                    <!--begin::Input group-->
-                                    <div class="fv-row mb-15">
-                                        <!--begin::Label-->
-                                        <label class="fs-6 fw-bold mb-2">Description</label>
-                                        <!--end::Label-->
-                                        <!--begin::Input-->
-                                        <input type="text" class="form-control form-control-solid" placeholder="" name="description" />
-                                        <!--end::Input-->
+                                    <div class="row g-9 mb-7">
+                                        <!--begin::Col-->
+                                        <div class="col-md-6 fv-row">
+                                            <!--begin::Label-->
+                                            <label class="fs-6 fw-bold mb-2">Phone Number</label>
+                                            <!--end::Label-->
+                                            <!--begin::Input-->
+                                            <input class="form-control form-control-solid" placeholder="" name="phone" />
+                                            <!--end::Input-->
+                                        </div>
+                                        <!--end::Col-->
+                                        <!--begin::Col-->
+                                        <div class="col-md-6 fv-row">
+                                            <!--begin::Label-->
+                                            <label class="fs-6 fw-bold mb-2">Mobile Number</label>
+                                            <!--end::Label-->
+                                            <!--begin::Input-->
+                                            <input class="form-control form-control-solid" placeholder="" name="mobile" />
+                                            <!--end::Input-->
+                                        </div>
+                                        <!--end::Col-->
                                     </div>
-                                    <!--end::Input group-->
                                     <!--begin::Billing toggle-->
-                                    <div class="fw-bolder fs-3 rotate collapsible mb-7" data-bs-toggle="collapse" href="#kt_modal_add_customer_billing_info" role="button" aria-expanded="false" aria-controls="kt_customer_view_details">Shipping Information
+                                    <div class="fw-bolder fs-3 rotate collapsible mb-7" data-bs-toggle="collapse" href="#kt_modal_add_customer_billing_info" role="button" aria-expanded="false" aria-controls="kt_customer_view_details">Contact Information
                                     <span class="ms-2 rotate-180">
                                         <!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
                                         <span class="svg-icon svg-icon-3">
@@ -462,10 +495,40 @@
                                         <!--begin::Input group-->
                                         <div class="d-flex flex-column mb-7 fv-row">
                                             <!--begin::Label-->
-                                            <label class="required fs-6 fw-bold mb-2">Address Line 1</label>
+                                            <label class="fs-6 fw-bold mb-2">
+                                                <span >Contact Type</span>
+                                                <i class="fas fa-exclamation-circle ms-1 fs-7" data-bs-toggle="tooltip" title="Contact Type"></i>
+                                            </label>
                                             <!--end::Label-->
                                             <!--begin::Input-->
-                                            <input class="form-control form-control-solid" placeholder="" name="address1" value="101, Collins Street" />
+                                            <select name="type" aria-label="Select a Country" data-control="select2" data-placeholder="Select a Country..." data-dropdown-parent="#kt_modal_add_customer" class="form-select form-select-solid fw-bolder">
+                                                <option value="">Select...</option>
+                                                <option value="Contact" selected="selected">Contact</option>
+                                                <option value="Invoice Address" selected="selected">Invoice Address</option>
+                                                <option value="Delivery Address" selected="selected">Delivery Address</option>
+                                                <option value="Other Address" selected="selected">Other Address</option>
+                                                <option value="Private Address" selected="selected">Private Address</option>
+                                            </select>
+                                            <!--end::Input-->
+                                        </div>
+                                        <!--end::Input group-->
+                                        <!--begin::Input group-->
+                                        <div class="d-flex flex-column mb-7 fv-row">
+                                            <!--begin::Label-->
+                                            <label class="fs-6 fw-bold mb-2">Contact Name</label>
+                                            <!--end::Label-->
+                                            <!--begin::Input-->
+                                            <input class="form-control form-control-solid" placeholder="" name="contact_name" />
+                                            <!--end::Input-->
+                                        </div>
+                                        <!--end::Input group-->
+                                        <!--begin::Input group-->
+                                        <div class="d-flex flex-column mb-7 fv-row">
+                                            <!--begin::Label-->
+                                            <label class="fs-6 fw-bold mb-2">Address Line 1</label>
+                                            <!--end::Label-->
+                                            <!--begin::Input-->
+                                            <input class="form-control form-control-solid" placeholder="" name="street" />
                                             <!--end::Input-->
                                         </div>
                                         <!--end::Input group-->
@@ -475,17 +538,17 @@
                                             <label class="fs-6 fw-bold mb-2">Address Line 2</label>
                                             <!--end::Label-->
                                             <!--begin::Input-->
-                                            <input class="form-control form-control-solid" placeholder="" name="address2" value="" />
+                                            <input class="form-control form-control-solid" placeholder="" name="street2" />
                                             <!--end::Input-->
                                         </div>
                                         <!--end::Input group-->
                                         <!--begin::Input group-->
                                         <div class="d-flex flex-column mb-7 fv-row">
                                             <!--begin::Label-->
-                                            <label class="required fs-6 fw-bold mb-2">Town</label>
+                                            <label class="fs-6 fw-bold mb-2">City</label>
                                             <!--end::Label-->
                                             <!--begin::Input-->
-                                            <input class="form-control form-control-solid" placeholder="" name="city" value="Melbourne" />
+                                            <input class="form-control form-control-solid" placeholder="" name="city" />
                                             <!--end::Input-->
                                         </div>
                                         <!--end::Input group-->
@@ -494,20 +557,20 @@
                                             <!--begin::Col-->
                                             <div class="col-md-6 fv-row">
                                                 <!--begin::Label-->
-                                                <label class="required fs-6 fw-bold mb-2">State / Province</label>
+                                                <label class="fs-6 fw-bold mb-2">State / Province</label>
                                                 <!--end::Label-->
                                                 <!--begin::Input-->
-                                                <input class="form-control form-control-solid" placeholder="" name="state" value="Victoria" />
+                                                <input class="form-control form-control-solid" placeholder="" name="state" />
                                                 <!--end::Input-->
                                             </div>
                                             <!--end::Col-->
                                             <!--begin::Col-->
                                             <div class="col-md-6 fv-row">
                                                 <!--begin::Label-->
-                                                <label class="required fs-6 fw-bold mb-2">Post Code</label>
+                                                <label class="fs-6 fw-bold mb-2">Post Code</label>
                                                 <!--end::Label-->
                                                 <!--begin::Input-->
-                                                <input class="form-control form-control-solid" placeholder="" name="postcode" value="3000" />
+                                                <input class="form-control form-control-solid" placeholder="" name="zip" />
                                                 <!--end::Input-->
                                             </div>
                                             <!--end::Col-->
@@ -517,7 +580,7 @@
                                         <div class="d-flex flex-column mb-7 fv-row">
                                             <!--begin::Label-->
                                             <label class="fs-6 fw-bold mb-2">
-                                                <span class="required">Country</span>
+                                                <span>Country</span>
                                                 <i class="fas fa-exclamation-circle ms-1 fs-7" data-bs-toggle="tooltip" title="Country of origination"></i>
                                             </label>
                                             <!--end::Label-->
@@ -616,7 +679,7 @@
                                                 <option value="HU">Hungary</option>
                                                 <option value="IS">Iceland</option>
                                                 <option value="IN">India</option>
-                                                <option value="ID">Indonesia</option>
+                                                <option value="ID" selected="selected">Indonesia</option>
                                                 <option value="IR">Iran, Islamic Republic of</option>
                                                 <option value="IQ">Iraq</option>
                                                 <option value="IE">Ireland</option>
@@ -738,7 +801,7 @@
                                                 <option value="UA">Ukraine</option>
                                                 <option value="AE">United Arab Emirates</option>
                                                 <option value="GB">United Kingdom</option>
-                                                <option value="US" selected="selected">United States</option>
+                                                <option value="US">United States</option>
                                                 <option value="UY">Uruguay</option>
                                                 <option value="UZ">Uzbekistan</option>
                                                 <option value="VU">Vanuatu</option>
@@ -753,31 +816,37 @@
                                         </div>
                                         <!--end::Input group-->
                                         <!--begin::Input group-->
-                                        <div class="fv-row mb-7">
-                                            <!--begin::Wrapper-->
-                                            <div class="d-flex flex-stack">
+                                        <div class="row g-9 mb-7">
+                                            <!--begin::Col-->
+                                            <div class="col-md-6 fv-row">
                                                 <!--begin::Label-->
-                                                <div class="me-5">
-                                                    <!--begin::Label-->
-                                                    <label class="fs-6 fw-bold">Use as a billing adderess?</label>
-                                                    <!--end::Label-->
-                                                    <!--begin::Input-->
-                                                    <div class="fs-7 fw-bold text-muted">If you need more info, please check budget planning</div>
-                                                    <!--end::Input-->
-                                                </div>
+                                                <label class="fs-6 fw-bold mb-2">Email Contact</label>
                                                 <!--end::Label-->
-                                                <!--begin::Switch-->
-                                                <label class="form-check form-switch form-check-custom form-check-solid">
-                                                    <!--begin::Input-->
-                                                    <input class="form-check-input" name="billing" type="checkbox" value="1" id="kt_modal_add_customer_billing" checked="checked" />
-                                                    <!--end::Input-->
-                                                    <!--begin::Label-->
-                                                    <span class="form-check-label fw-bold text-muted" for="kt_modal_add_customer_billing">Yes</span>
-                                                    <!--end::Label-->
-                                                </label>
-                                                <!--end::Switch-->
+                                                <!--begin::Input-->
+                                                <input class="form-control form-control-solid" placeholder="" name="emailc" />
+                                                <!--end::Input-->
                                             </div>
-                                            <!--begin::Wrapper-->
+                                            <!--end::Col-->
+                                            <!--begin::Col-->
+                                            <div class="col-md-6 fv-row">
+                                                <!--begin::Label-->
+                                                <label class="fs-6 fw-bold mb-2">Phone Number Contact</label>
+                                                <!--end::Label-->
+                                                <!--begin::Input-->
+                                                <input class="form-control form-control-solid" placeholder="" name="phonec" />
+                                                <!--end::Input-->
+                                            </div>
+                                            <!--end::Col-->
+                                        </div>
+                                        <!--end::Input group-->
+                                        <!--begin::Input group-->
+                                        <div class="d-flex flex-column mb-7 fv-row">
+                                            <!--begin::Label-->
+                                            <label class="fs-6 fw-bold mb-2">Notes</label>
+                                            <!--end::Label-->
+                                            <!--begin::Input-->
+                                            <input class="form-control form-control-solid" placeholder="" name="note" />
+                                            <!--end::Input-->
                                         </div>
                                         <!--end::Input group-->
                                     </div>

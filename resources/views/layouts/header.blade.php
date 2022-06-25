@@ -54,7 +54,7 @@
                                             </span>
                                             <!--end::Svg Icon-->
                                         </span>
-                                        <a class="menu-link py-3" href="{{ url('/customer/list') }}">
+                                        <a href="{{ url('/customer/list') }}">
                                         <span class="menu-title">Customers</span>
                                         </a>
                                     </span>

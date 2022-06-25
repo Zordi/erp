@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Finance\Customer;
 
 use App\Http\Controllers\Controller;
+use App\Models\Finance\Customer;
 
 class CustomerController extends Controller
 {
@@ -23,6 +24,7 @@ class CustomerController extends Controller
      */
     public function index()
     {
-        return view('finance/customer/customer');
+        $customer = Customer::latest()->get();
+        return view('finance/customer/customer', compact('customer'));
     }
 }

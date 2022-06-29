@@ -501,7 +501,7 @@
                                             </label>
                                             <!--end::Label-->
                                             <!--begin::Input-->
-                                            <select name="type" aria-label="Select a Country" data-control="select2" data-placeholder="Select a Country..." data-dropdown-parent="#kt_modal_add_customer" class="form-select form-select-solid fw-bolder">
+                                            <select name="type" aria-label="Select Contact Type" data-control="select2" data-placeholder="Select a Country..." data-dropdown-parent="#kt_modal_add_customer" class="form-select form-select-solid fw-bolder">
                                                 <option value="">Select...</option>
                                                 <option value="Contact" selected="selected">Contact</option>
                                                 <option value="Invoice Address" selected="selected">Invoice Address</option>
